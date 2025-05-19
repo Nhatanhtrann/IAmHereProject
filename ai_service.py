@@ -567,6 +567,6 @@ def user_dashboard(user_id):
         logger.error(f"Lỗi tạo dashboard: {e}")
         return jsonify({"error": "Lỗi tạo dashboard"}), 500
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     logger.info("Khởi động Enhanced Depression Support AI Service...")
-    app.run(host='0.0.0.0', port=5001, debug=True)  # Chạy Flask server
+    app.run(host='0.0.0.0', port=10000)

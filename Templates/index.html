@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>IAmHere Project</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/chocolat.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/easy-responsive-tabs.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/flexslider.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.css') }}">
+<!-- <link rel="stylesheet" href="{{ url_for('static', filename='text/css') }}"> -->
+<link rel="stylesheet" href="{{ url_for('static', filename='js/modernizr-2.6.2.min.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='images/mainlogo.svg') }}">
+
+
+<!--fonts-->
+<link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Federo" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='fonts/fontawesome-free-6.5.1-web/css/all.css') }}">
+
+<!-- What is the project -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
+
+<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+<script src="static/js/script.js"></script>
+
+</head>
+<body>
+<!-- header -->
+<div class="banner-top">
+			<div class="social-bnr-agileits">
+				<ul class="social-icons3">
+					<a href="https://www.facebook.com/profile.php?id=100015131838769"> 
+						<i class="fa-brands fa-facebook icon-border facebook"></i>
+					</a>
+					<a href="https://www.instagram.com/nh_anhhhh/"> 
+						<i class="fa-brands fa-instagram icon-border instagram"></i>
+					</a>
+					<a href="mailto:iamhereproject07@gmail.com"> 
+						<i class="fa-brands fa-google-plus-g icon-border googleplus"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/nhat-anh-tran-8a6984209/"> 
+						<i class="fa-brands fa-linkedin-in icon-border likedin"></i>
+					</a>
+				</ul>
+			</div>
+			<div class="contact-bnr-w3-agile">
+				<ul>
+					<!-- <li><button onclick="translatePage()">Dịch</button></li> -->
+					<!-- <li><img src="images/vietnam.svg" alt="Vietnamese"><a href=""></a></li>
+					<li><img src="images/usa.svg" alt="Vietnamese"><a href=""></a></li> -->
+					<li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:iamhereproject07@gmail.com">iamhereproject07@gmail.com</a></li>
+					<!-- <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tell:0944410247">(+84) 944410247</a></li>	 -->
+					
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	<div class="w3_navigation">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header navbar-left">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<h1>
+                        <a class="navbar-brand" href="{{ url_for('home') }}">
+                            <img src="{{ url_for('static', filename='images/iamherelogo.svg') }}" alt="Logo" class="navbar-brand">
+                            <p class="logo_w3l_agile_caption">The AI platform for Life Empowerment</p>
+                        </a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<nav class="menu menu--iris">
+						<ul class="nav navbar-nav menu__list">
+                            <li class="menu__item menu__item--current"><a href="{{ url_for('home') }}" class="menu__link">Trang chủ</a></li>
+							<li class="menu__item"><a href="#about" class="menu__link scroll">Giới thiệu</a></li>
+                            <li class="menu__item"><a href="#rooms" class="menu__link scroll">Dự án</a></li>
+							<!-- <li class="menu__item"><a href="#rooms" class="menu__link scroll">Campaigns</a></li> -->
+							<li class="menu__item"><a href="#contact" class="menu__link scroll">Liên hệ</a></li>
+						
+						</ul>
+					</nav>
+				</div>
+			</nav>
+
+		</div>
+	</div>
+<!-- //header -->
+		<!-- banner -->
+	<div id="home" class="w3ls-banner">
+		<!-- banner-text -->
+		<div class="slider">
+			<div class="callbacks_container">
+				<ul class="rslides callbacks callbacks1" id="slider4">
+					<li>
+						<div class="w3layouts-banner-top">
+
+							<div class="container">
+								<div class="agileits-banner-info">
+                                    <img id="myVideo" src="{{ url_for('static', filename='images/background.png') }}" alt="Background">
+								</div>	
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+			<!--banner Slider starts Here-->
+		</div>
+		    <div class="thim-click-to-bottom">
+				<a href="#about" class="scroll">
+					<i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+				</a>
+			</div>
+	</div>	
+	<!-- //banner --> 
+<!--//Header-->
+
+<div id="availability-agileits">
+
+			<div class="clearfix"> </div>
+</div>
+<!-- //banner-bottom -->
+<!-- /about -->
+ 	<div class="about-wthree" id="about">
+		<section id="present-3" style="background-color: #ebeef2;">
+		<div class="text-highlight text-white text-uppercase">
+				<span class="text-only-outline text-secondary">Dự án</span> "IAMHERE" <span class="text-only-outline text-secondary">là gì? </span>
+		 </div>
+        <div class="container-fluid" style="padding-left: 0px; padding-right: 0px;">
+            <div class="align-items-center">
+                <div class="col-lg-4 col-md-3 col-sm-3 img-p3">
+                    <img src="{{ url_for('static', filename='images/whatisiamhere-left.svg') }}"  style="max-width: 100%;">
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 text-content-section3" style="text-align: justify;">
+                    <!-- <hr class="hr mt-2 mb-2 text-center text-dark"> -->
+                    <ul class=" mt-4 text-dark">
+                        <li class="text-p-content mb-2">IAmHere là một nền tảng AI sáng tạo được thiết kế để hỗ trợ và trao quyền cho những cá nhân đang phải vật lộn với các vấn đề sức khỏe tâm thần, đặc biệt là trầm cảm. Nền tảng này tận dụng công nghệ trí tuệ nhân tạo tiên tiến để cung cấp hỗ trợ sức khỏe tâm thần dễ tiếp cận, được cá nhân hóa và không kỳ thị. Sứ mệnh chính của nó là giúp người dùng vượt qua các thách thức về sức khỏe tâm thần của họ bằng cách cung cấp hỗ trợ liên tục, đáng tin cậy và đồng cảm.</li>
+                        <li class="text-p-content mb-2">Đối tượng mục tiêu chính của IAmHere bao gồm những cá nhân trẻ tuổi từ 15-30, đặc biệt là những người đang học trung học và đại học ở các khu vực thành thị của Việt Nam. Nhóm nhân khẩu này thường phải đối mặt với những thách thức đáng kể về sức khỏe tâm thần nhưng có thể không được tiếp cận với các dịch vụ sức khỏe tâm thần truyền thống do kỳ thị, chi phí hoặc rào cản về mặt hậu cần.</li>
+                        <!-- <li class="text-p-content mb-2">The primary target audience for IAmHere includes young individuals aged 15-30, particularly those in high school and university settings in urban areas of Vietnam. This demographic often faces significant mental health challenges but may lack access to traditional mental health services due to stigma, cost, or logistical barriers.</li> -->
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-3 img-p3" style="text-align: right;">
+                    <img src="{{ url_for('static', filename='images/whatisiamhere-right.svg') }}"  style="max-width: 100%;">
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+	<div class="text-highlight text-white text-uppercase">
+		<span class="text-only-outline text-secondary">Trò chuyện cùng</span> "IAMHERE"<span class="text-only-outline text-secondary">nhé!!!</span>
+	</div>
+	<div class="chat-container">
+		<!-- <div class="text-highlight text-white text-uppercase">
+				<span class="text-only-outline text-secondary">Trò chuyện cùng</span> "IAMHERE"<span class="text-only-outline text-secondary">nhé!!!</span>
+			</div> -->
+        <!-- <div class="chat-header">
+            <p>Luôn nhớ: IAmHere không phải chuyên gia y tế. Hãy tìm sự giúp đỡ chuyên nghiệp nếu cần.</p>
+        </div> -->
+        <div class="disclaimer">
+            <strong>Tuyên bố Miễn trừ Trách nhiệm:</strong> IAmHere Project chỉ cung cấp thông tin và hỗ trợ tinh thần, không thay thế chẩn đoán hay điều trị y tế chuyên nghiệp. Nếu bạn có lo ngại về sức khỏe tâm thần, vui lòng tham khảo ý kiến bác sĩ hoặc chuyên gia nhé 
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <!-- Tin nhắn bot chào mừng ban đầu -->
+            <div class="message bot">
+                <div class="text">Chào bạn, tôi là trợ lý AI sẵn sàng lắng nghe và hỗ trợ bạn. Bạn có thể chia sẻ bất cứ điều gì bạn đang cảm thấy hoặc suy nghĩ không?</div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Nhập tin nhắn của bạn...">
+            <button id="sendMessage">Gửi</button>
+            <button id="resetChat" class="reset-button">Reset</button>
+        </div>
+    </div>
+
+
+<!--sevices-->
+<div class="clearfix"> </div>
+
+<div class="advantages">
+	<div class="text-highlight_green text-white text-uppercase">
+			<span class="text-only-outline_white text-secondary">Tại sao</span> Dự án "IAMHERE" <span class="text-only-outline_white text-secondary">được sinh ra? </span>
+	</div>
+	<div class="container">
+		<div class="advantages-main">
+				<!-- <h3 class="title-w3-agileits">WHY WAS THE "IAmHere" PROJECT BORN?</h3> -->
+		   <div class="advantage-bottom">
+			 <div class="col-md-6 advantage-grid left-w3ls wow bounceInLeft" data-wow-delay="0.3s">
+			 	<div class="advantage-block">
+					<i class="fa-solid fa-1" aria-hidden="true"></i>
+					<h4>Tầm quan trọng của sự hỗ trợ tâm lý</h4>
+					<p>Tại Việt Nam, “tỷ lệ mắc 10 rối loạn tâm thần phổ biến là 14,9% dân số, tức là có khoảng 15 triệu người. Trầm cảm và lo âu chiếm tỷ lệ cao, lên tới 5 đến 6% dân số, trong khi đó là các rối loạn tâm thần khác như rối loạn lưỡng cực, các rối loạn tâm thần liên quan đến việc sử dụng rượu, ma túy và các chất gây nghiện khác... Ở trẻ em, các vấn đề về sức khỏe tâm thần khoảng 12%, tương đương với hơn 3 triệu trẻ em đang cần các dịch vụ chăm sóc sức khỏe tâm thần”. Thông tin này được trích từ hệ thống chăm sóc sức khỏe tâm thần.</p>
+					<!-- <img src=".//images/achive1.svg" alt="Academic Incentive Scholarships"> -->
+					<!-- <p><i class="fa fa-check" aria-hidden="true"></i>Private balcony</p> -->
+			 		
+			 	</div>
+				
+			 </div>
+			 <div class=" col-md-6 advantage-grid right-w3ls wow zoomIn" data-wow-delay="0.3s">
+			 	<div class="advantage-block">
+					<i class="fa-solid fa-2" aria-hidden="true"></i>
+			 		<h4>Hiệu quả của việc lắng nghe và hỗ trợ</h4>
+					 <p>Việc lắng nghe và hỗ trợ của dự án "IAmHere" không chỉ là hành động nhân đạo mà còn mang lại những tác động tích cực đến sức khỏe tinh thần. Việc cảm nhận và chia sẻ cảm xúc giúp giảm căng thẳng, lo âu và cảm giác cô đơn. Nhiều nghiên cứu đã chỉ ra rằng sự hỗ trợ về mặt tinh thần từ cộng đồng có thể giúp cải thiện tâm trạng và giảm nguy cơ tự tử. Bằng cách chia sẻ, người ta không chỉ tạo ra một môi trường thoải mái và hỗ trợ mà còn tạo ra ý thức cộng đồng mạnh mẽ, giúp mọi người cảm thấy được quan tâm và gắn kết với nhau. Đó chính là châm ngôn để tạo nên dự án "IAmHere".</p>
+			 		<!-- <img src=".//images/achive2.svg" alt="International Student Exchange"> -->
+			 	</div>
+			 </div>
+			 <div class=" col-md-6 advantage-grid left-w3ls wow zoomIn" data-wow-delay="0.3s">
+			 	<div class="advantage-block">
+					<i class="fa-solid fa-3" aria-hidden="true"></i>
+			 		<h4>Tạo ra một môi trường hỗ trợ</h4>
+					 <p>Tạo ra một môi trường hỗ trợ thông qua dự án “IAmHere” là điều quan trọng để xây dựng một cộng đồng vững mạnh và giúp mọi người cảm thấy an toàn và ấm áp. Bằng cách khuyến khích chia sẻ và hiểu biết. Tạo ra một cộng đồng đồng cảm và hỗ trợ không chỉ giúp giảm căng thẳng và lo lắng mà còn có thể giúp ngăn ngừa tự tử và nâng cao chất lượng cuộc sống nói chung cho những cá nhân liên quan.</p>
+			 		<!-- <img src=".//images/achive2.svg" alt="International Student Exchange"> -->
+					
+			 	</div>
+			 </div>
+			 <div class="col-md-6 advantage-grid right-w3ls wow bounceInLeft" data-wow-delay="0.3s">
+			 	<div class="advantage-block ">
+					<i class="fa-solid fa-4" aria-hidden="true"></i>
+			 		<h4>Kết luận và lời kêu gọi hành động</h4>
+					 <p>Dự án "IAmHere" không chỉ là nỗ lực tạo ra một môi trường hỗ trợ và đồng cảm mà còn là lời kêu gọi hành động cho tất cả mọi người. Dự án cũng khuyến khích mọi người tham gia vào cộng đồng của chúng ta, dành thời gian lắng nghe và hỗ trợ những người đang cần. Hãy cùng nhau tạo ra một cộng đồng đồng cảm và hỗ trợ, nơi mọi người đều cảm thấy được chấp nhận và quan tâm.</p>
+			 		<!-- <img src=".//images/achive3.svg" alt="4th ASEAN Youth Initiatives Empowerment Program (AYIEP) Scholarship"> -->
+			 	</div>
+			 </div>
+			<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--//sevices-->
+
+<!-- banner-bottom -->
+<div class="banner-bottom">
+		<div class="container">	
+			<div class="text-only-outline_bigger text-secondary">
+					<span class="text-highlight_black text-white text-uppercase">Làm cách nào để </span> chúng ta <span class="text-highlight_black text-white text-uppercase">cảm thấy tốt hơn? </span>
+			</div>
+			<div class="w3ls_banner_bottom_grids">
+				<ul class="cbp-ig-grid">
+				<li>
+						<div class="w3_grid_effect">
+							<span class="cbp-ig-icon w3_users fa-brands fa-rocketchat "></span>
+							<h4 class="cbp-ig-title">Kết nối với IAmHere</h4>
+							<span class="cbp-ig-category">Dự án IAmHere</span>
+						</div>
+					</li>
+					<li>
+						<div class="w3_grid_effect">
+							<span class="cbp-ig-icon w3_ticket fa-solid fa-dumbbell"></span>
+							<h4 class="cbp-ig-title">Lối sống lành mạnh</h4>
+							<span class="cbp-ig-category">Dự án IAmHere</span>
+						</div>
+					</li>
+					<li>
+						<div class="w3_grid_effect">
+							<span class="cbp-ig-icon w3_cube fa-solid fa-spa"></span>
+							<h4 class="cbp-ig-title">Thiền và yoga</h4>
+							<span class="cbp-ig-category">Dự án IAmHere</span>
+							
+						</div>
+					</li>
+					<li>
+						<div class="w3_grid_effect">
+							<span class="cbp-ig-icon w3_road fa-solid fa-weight-scale"></span>
+							<h4 class="cbp-ig-title">Theo dõi cảm xúc</h4>
+							<span class="cbp-ig-category">Dự án IAmHere</span>
+							
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="w3ls_banner_bottom_grids">
+				<ul class="cbp-ig-grid">
+					<li>
+						<div class="w3_grid_effect">
+							<span class="cbp-ig-icon w3_road fa-solid fa-ban-smoking"></span>
+							<h4 class="cbp-ig-title">Không sử dụng chất cấm</h4>
+							<span class="cbp-ig-category">Dự án IAmHere</span>
+							
+						</div>
+					</li>
+					<li>
+						<div class="w3_grid_effect">
+							<span class="cbp-ig-icon w3_cube fa-solid fa-hand-holding-medical"></span>
+							<h4 class="cbp-ig-title">Sử dụng thuốc đều đặn</h4>
+							<span class="cbp-ig-category">Dự án IAmHere</span>
+							
+						</div>
+					</li>
+					<li>
+						<div class="w3_grid_effect">
+							<span class="cbp-ig-icon w3_users fa-solid fa-heart-pulse"></span>
+							<h4 class="cbp-ig-title">Bình tĩnh và hít thở sâu</h4>
+							<span class="cbp-ig-category">Dự án IAmHere</span>
+						</div>
+					</li>
+					<li>
+						<div class="w3_grid_effect">
+							<span class="cbp-ig-icon w3_ticket fa-solid fa-book"></span>
+							<h4 class="cbp-ig-title">Đọc sách</h4>
+							<span class="cbp-ig-category">Dự án IAmHere</span>
+						</div>
+						
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<div class="text-highlight_orange text-white text-uppercase">
+	<span class="text-only-outline_blue text-secondary">Các giai đoạn của</span> Dự án "IAMHERE" <span class="text-only-outline_blue text-secondary"> </span>
+</div>
+<!-- <h3 class="title-w3-agileits title-black-wthree">WHAT IS THE TIMELINE OF THE "IAmHere" PROJECT?</h3> -->
+	<div class="timeline_total">
+	<div class="timeline_img">
+        <img src="{{ url_for('static', filename='images/timeline.svg') }}" alt="Background">
+	</div>
+	<div class="timeline">
+		<div class="timeline-item" onclick="showDetails(1)">
+			<div class="time">Tháng 5 - 7</div>
+			<div class="content">Giai đoạn 1</div>
+		</div>
+		<div class="timeline-item" onclick="showDetails(2)">
+			<div class="time">Tháng 7 - 12</div>
+			<div class="content">Giai đoạn 2</div>
+		</div>
+	<!-- Add more timeline items as needed -->
+	</div>
+
+</div>
+<div class="details" id="details">
+<div class="close-btn" onclick="hideDetails()">x</div>
+<h2 id="event-title"></h2>
+<p id="event-description"></p>
+</div>
+<!-- //gallery -->
+
+	 <!-- rooms & rates -->
+      <div class="plans-section" id="rooms">
+				<div class="container">
+				<div class="text-highlight text-white text-uppercase">
+					<span class="text-only-outline text-secondary">Các chiến dịch của</span> Dự án "IAMHERE" <span class="text-only-outline text-secondary"></span>
+	 			</div>
+				<div class="priceing-table-main">
+				 <div class="col-md-3 price-grid">
+					<div class="price-block agile">
+						<div class="price-gd-top">
+                        <img src="{{ url_for('static', filename='images/campaign1.png') }}" alt=" " class="img-responsive">
+							<h4>01/2024</h4>
+						</div>
+						<div class="price-gd-bottom">
+							   <div class="price-list">
+									<ul>
+											<p>Khởi chạy dự án</p>
+									
+								     </ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				 <div class="col-md-3 price-grid">
+					<div class="price-block agile">
+						<div class="price-gd-top">
+                        <img src="{{ url_for('static', filename='images/campaign2.png') }}" alt=" " class="img-responsive">
+							<h4>06/2024</h4>
+						</div>
+						<div class="price-gd-bottom">
+							   <div class="price-list">
+									<ul>
+											<p>Trình bày dự án tại Indonesia </p>
+									
+								     </ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 price-grid">
+					<div class="price-block agile">
+						<div class="price-gd-top">
+                        <img src="{{ url_for('static', filename='images/campaign_default.png') }}" alt=" " class="img-responsive">
+
+							<h4>Dự kiến</h4>
+						</div>
+						<div class="price-gd-bottom">
+							   <div class="price-list">
+									<ul>
+										<p>Một điều bất ngờ </p>
+									
+								     </ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 price-grid">
+					<div class="price-block agile">
+						<div class="price-gd-top">
+                            <img src="{{ url_for('static', filename='images/campaign_default.png') }}" alt=" " class="img-responsive">
+							<h4>Dự kiến</h4>
+						</div>
+						<div class="price-gd-bottom">
+							   <div class="price-list">
+									<ul>
+										<p>Một điều bất ngờ</p>
+									
+								     </ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- Phần đối tác -->
+
+	<section class="partners">
+		<div class="container">
+			<div class="text-only-outline text-secondary">
+					<span class="text-highlight_smaller text-white text-uppercase">Đối tác và dự án hợp tác khác</span>
+			</div>
+			<!-- <h3 class="title-w3-agileits title-black-wthree">Partners and participating projects</h3> -->
+				<div class="partner-logos">
+					<div class="partner-logo">
+                        <img src="{{ url_for('static', filename='images/partner2.png') }}" alt="Partner 1">
+					</div>
+					<div class="partner-logo">
+                        <img src="{{ url_for('static', filename='images/partner1.png') }}" alt="Partner 1">
+					</div>
+					<div class="partner-logo">
+                        <img src="{{ url_for('static', filename='images/partner3.svg') }}" alt="Partner 2">
+					</div>
+					<div class="partner-logo">
+                        <img src="{{ url_for('static', filename='images/partner4.svg') }}" alt="Partner 3">
+					</div>
+					<div class="partner-logo">
+                        <img src="{{ url_for('static', filename='images/partner5.svg') }}" alt="Partner 4">
+					</div>
+					<div class="partner-logo">
+                        <img src="{{ url_for('static', filename='images/partner6.svg') }}" alt="Partner 5">
+					</div>
+				</div>
+		</div>
+	</section>
+
+<!-- contact -->
+<section class="contact-w3ls" id="contact">
+	<div class="container">
+	<div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile2" data-aos="flip-left">
+	<div class="contact-agileits">
+				<h4>Kết nối với IAmHere</h4>
+				<p class="contact-agile2">Đăng ký để nhận thông tin của chúng tôi nhé</p>
+				<form  method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" name="sentMessage" id="contactForm" >
+					<div class="control-group form-group">
+                        
+                            <label class="contact-p1">Họ và tên:</label>
+                            <input type="text" class="form-control" name="name" id="name" required >
+                            <p class="help-block"></p>
+                       
+                    </div>	
+                    <div class="control-group form-group">
+                        
+                            <label class="contact-p1">Số điện thoại:</label>
+                            <input type="tel" class="form-control" name="phone" id="phone" required >
+							<p class="help-block"></p>
+						
+                    </div>
+                    <div class="control-group form-group">
+                        
+                            <label class="contact-p1">Email:</label>
+                            <input type="email" class="form-control" name="email" id="email" required >
+							<p class="help-block"></p>
+						
+                    </div>
+                    
+                    
+                    <input type="submit" name="sub" value="Send Now" class="btn btn-primary">
+				</form>
+				<div id="popup" class="popup">
+					<h2>Thank you for contacting us!</h2>
+					<p>We have received your information.</p>
+				</div>
+
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile1" data-aos="flip-right">
+			<h4>Kết nối với nhà sáng lập</h4>
+			<p class="contact-agile1"><strong>Nhà sáng lập dự án:</strong> <a href="https://www.nhatanhtranvn.com/"> Nhat Anh Tran (Brian)</a></p>
+			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:name@example.com">iamhereproject07@gmail.com</a></p>
+			<p class="contact-agile1"><strong>Địa chỉ :</strong> Thành phố Cần Thơ, Vietnam</p>
+																
+			<div class="social-bnr-agileits footer-icons-agileinfo">
+				<ul class="social-icons3">
+					<li>
+						<a href="https://www.facebook.com/profile.php?id=100015131838769"> 
+							<i class="fa-brands fa-facebook icon-border facebook"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/nh_anhhhh/"> 
+							<i class="fa-brands fa-instagram icon-border instagram"></i>
+						</a>
+					</li>
+					<li>
+						<a href="mailto:iamhereproject07@gmail.com"> 
+							<i class="fa-brands fa-google-plus-g icon-border googleplus"></i>
+						</a>
+					</li>	
+					<li>
+						<a href="https://www.linkedin.com/in/nhat-anh-tran-8a6984209/"> 
+						<i class="fa-brands fa-linkedin-in icon-border likedin"></i>
+					</a>
+					</li>
+				</ul>
+			</div>
+			<!-- <iframe src="https://maps.google.com/maps?q=Can%20Tho%20University,%20Vietnam&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" ></iframe> -->
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62860.63928560192!2d105.71637054157391!3d10.034184408554962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0629f6de3edb7%3A0x527f09dbfb20b659!2zQ2FuIFRobywgTmluaCBLaeG7gXUsIEPhuqduIFRoxqEsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1702355334142!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7862661.401754289!2d105.9102589!3d15.7939252!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a089bf472b1a59%3A0x64c072d3e5de939!2sIAmHere%20Project!5e0!3m2!1sen!2s!4v1715914626339!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</section>
+<!-- /contact -->
+			<div class="copy">
+		        <p>© 2024 IAMHERE PROJECT. All Rights Reserved | Design by <a href="index.php">IAMHERE PROJECT</a> </p>
+		    </div>
+<!--/footer -->
+<!-- js -->
+<script type="text/javascript" src="/static/js/jquery-2.1.4.min.js"></script>
+<!-- contact form -->
+<script src="/static/js/jqBootstrapValidation.js"></script>
+
+<!-- /contact form -->	
+
+<!-- navbar -->
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+			const menuItems = document.querySelectorAll('.menu__item');
+
+			menuItems.forEach(item => {
+			item.addEventListener('click', function() {
+            // Remove `menu__item--current` from all items
+            menuItems.forEach(i => i.classList.remove('menu__item--current'));
+
+            // Add `menu__item--current` to the clicked item
+            this.classList.add('menu__item--current');
+        });
+    });
+});
+		</script>
+<!-- /navbar -->
+
+<!-- Calendar -->
+		<script src="/static/js/jquery-ui.js"></script>
+		<script>
+				$(function() {
+				$( "#datepicker,#datepicker1,#datepicker2,#datepicker3" ).datepicker();
+				});
+		</script>
+<!-- //Calendar -->
+<!-- gallery popup -->
+<link rel="stylesheet" href="static/css/swipebox.css">
+				<script src="/static/js/jquery.swipebox.min.js"></script> 
+					<script type="text/javascript">
+						jQuery(function($) {
+							$(".swipebox").swipebox();
+						});
+					</script>
+<!-- //gallery popup -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="/static/js/move-top.js"></script>
+<script type="text/javascript" src="/static/js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- flexSlider -->
+				<script defer src="/static/js/jquery.flexslider.js"></script>
+				<script type="text/javascript">
+				$(window).load(function(){
+				  $('.flexslider').flexslider({
+					animation: "slide",
+					start: function(slider){
+					  $('body').removeClass('loading');
+					}
+				  });
+				});
+			  </script>
+			<!-- //flexSlider -->
+<script src="/static/js/responsiveslides.min.js"></script>
+			<script>
+						// You can also use "$(window).load(function() {"
+						$(function () {
+						  // Slideshow 4
+						  $("#slider4").responsiveSlides({
+							auto: true,
+							pager:true,
+							nav:false,
+							speed: 500,
+							namespace: "callbacks",
+							before: function () {
+							  $('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+							  $('.events').append("<li>after event fired.</li>");
+							}
+						  });
+					
+						});
+			</script>
+		<!--search-bar-->
+		<script src="/static/js/main.js"></script>	
+<!--//search-bar-->
+<!--tabs-->
+<script src="/static/js/easy-responsive-tabs.js"></script>
+<script>
+$(document).ready(function () {
+$('#horizontalTab').easyResponsiveTabs({
+type: 'default', //Types: default, vertical, accordion           
+width: 'auto', //auto or any width like 600px
+fit: true,   // 100% fit in a container
+closed: 'accordion', // Start closed if in accordion view
+activate: function(event) { // Callback function if tab is switched
+var $tab = $(this);
+var $info = $('#tabInfo');
+var $name = $('span', $info);
+$name.text($tab.text());
+$info.show();
+}
+});
+$('#verticalTab').easyResponsiveTabs({
+type: 'vertical',
+width: 'auto',
+fit: true
+});
+});
+</script>
+<!--//tabs-->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<script>
+		function showDetails(eventId) {
+		var title = '';
+		var description = '';
+
+		// Get event details based on eventId
+		switch(eventId) {
+			case 1:
+			title = 'FROM MAY TO JULY';
+			description = 'Throughout the timeline from May to July, IAmHere focuses on building a professional and capable project team. By recruiting individuals who are passionate and possess suitable skills, we form a diverse team ready to contribute to the project\'s shared mission. In addition, During this period, IAmHere also prioritizes securing the necessary funding and resources for the project. We engage in negotiations and efforts to ensure adequate financial resources and other necessary assets to develop and operate the IAmHere platform effectively and sustainably';
+			break;
+			case 2:
+			title = 'FROM JULY TO SEP';
+			description = ' IAmHere will implement robust monitoring and evaluation mechanisms to assess the effectiveness and impact of its platform and support services. Through data analysis, user feedback collection, and stakeholder consultations, we will continuously assess the platform\'s reach, user engagement, and outcomes.\n By prioritizing ongoing monitoring and evaluation, IAmHere aims to ensure that its efforts are making a tangible difference in supporting individuals mental health and well-being. Through data-driven insights and continuous improvement, we will adapt and refine our approach to maximize our positive impact on the community.';
+			break;
+			case 3:
+			title = 'FROM JULY TO AUG';
+			description = 'Establish Partnerships and Collaborations: IAmHere will actively seek out partnerships and collaborations with like-minded organizations, mental health professionals, and community leaders. By forming strategic alliances, we aim to expand our resources, expertise, and outreach efforts, ultimately fostering a more comprehensive support network for those in need.\n Feedback Form Implementation: IAmHere will introduce a feedback form mechanism to gather insights and suggestions from users regarding their experiences with the platform. This feedback will be invaluable in guiding future developments and ensuring that IAmHere remains responsive to the evolving needs of its community members.';
+			break;
+			case 4:
+			title = 'FROM AUG TO SEP';
+			description = 'IAmHere will embark on the highly anticipated launch of its platform, introducing it to the public and promoting its accessibility and benefits. Through targeted marketing campaigns and strategic partnerships, we aim to raise awareness and encourage individuals to utilize the platform for mental health support and community engagement.';
+			break;
+			case 5:
+			title = 'FROM SEP TO FUTURE';
+			description = ' IAmHere will implement robust monitoring and evaluation mechanisms to assess the effectiveness and impact of its platform and support services. Through data analysis, user feedback collection, and stakeholder consultations, we will continuously assess the platform\'s reach, user engagement, and outcomes.\n By prioritizing ongoing monitoring and evaluation, IAmHere aims to ensure that its efforts are making a tangible difference in supporting individuals mental health and well-being. Through data-driven insights and continuous improvement, we will adapt and refine our approach to maximize our positive impact on the community.';
+			break;
+			// Add more cases for additional events
+			default:
+			title = 'Unknown Event';
+			description = 'Details not available.';
+		}
+
+		// Update details in the HTML
+		document.getElementById('event-title').innerText = title;
+		document.getElementById('event-description').innerText = description;
+
+		// Show details panel
+		document.getElementById('details').style.display = 'block';
+		}
+
+		function hideDetails() {
+		// Hide details panel
+		document.getElementById('details').style.display = 'none';
+		}
+	</script>
+	<script>
+        // JavaScript function to show the popup
+        function showPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+
+            // Hide the popup after 3 seconds
+            setTimeout(function() {
+                popup.style.display = "none";
+            }, 3000);
+        }
+
+        // Attach a submit event listener to the form
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            // Prevent the default form submission
+            event.preventDefault();
+
+            // Get form data
+            var formData = new FormData(this);
+
+            // Send the form data using Fetch API
+            fetch('process_form.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Show the popup if data was sent successfully
+                    showPopup();
+                } else {
+                    return Promise.reject('Failed to submit form');
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    </script>
+
+	<!-- Phan Script Video Call -->
+	<script>
+        const localVideo = document.getElementById('localVideo');
+        const remoteVideo = document.getElementById('remoteVideo');
+        const contactAdminButton = document.getElementById('contactAdmin');
+        let localStream;
+        let remoteStream;
+        let peerConnection;
+
+        const socket = new WebSocket('ws://localhost:8080');
+
+        socket.onopen = () => {
+            socket.send(JSON.stringify({ type: 'join', userType: 'user' }));
+        };
+
+        socket.onmessage = async (event) => {
+            const data = JSON.parse(event.data);
+            if (data.type === 'signal') {
+                if (data.signal.type === 'offer') {
+                    await peerConnection.setRemoteDescription(new RTCSessionDescription(data.signal));
+                    const answer = await peerConnection.createAnswer();
+                    await peerConnection.setLocalDescription(answer);
+                    socket.send(JSON.stringify({ type: 'signal', to: data.from, signal: answer }));
+                } else if (data.signal.type === 'answer') {
+                    await peerConnection.setRemoteDescription(new RTCSessionDescription(data.signal));
+                } else if (data.signal.type === 'candidate') {
+                    await peerConnection.addIceCandidate(new RTCIceCandidate(data.signal));
+                }
+            }
+        };
+
+        contactAdminButton.addEventListener('click', async () => {
+            socket.send(JSON.stringify({ type: 'contact_admin' }));
+
+            localStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+            localVideo.srcObject = localStream;
+
+            peerConnection = new RTCPeerConnection({ iceServers: [{ urls: 'stun:stun.l.google.com:19302' }] });
+
+            peerConnection.onicecandidate = (event) => {
+                if (event.candidate) {
+                    socket.send(JSON.stringify({ type: 'signal', to: 'admin', signal: event.candidate }));
+                }
+            };
+
+            peerConnection.ontrack = (event) => {
+                remoteStream = event.streams[0];
+                remoteVideo.srcObject = remoteStream;
+            };
+
+            localStream.getTracks().forEach(track => peerConnection.addTrack(track, localStream));
+
+            const offer = await peerConnection.createOffer();
+            await peerConnection.setLocalDescription(offer);
+            socket.send(JSON.stringify({ type: 'signal', to: 'admin', signal: offer }));
+        });
+    </script>
+	<div class="arr-w3ls">
+	<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+<!-- //smooth scrolling -->
+<script type="text/javascript" src="static/js/bootstrap-3.1.1.min.js"></script>
+
+<!-- Phần chat -->
+<script>
+    const chatContainer = document.getElementById('chat-container');
+    const chatForm = document.getElementById('chat-form');
+    const userInput = document.getElementById('user-input');
+
+    chatForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const message = userInput.value.trim();
+        if (!message) return;
+
+        addMessage('Bạn', message);
+        userInput.value = '';
+
+        try {
+            const response = await fetch('/get_response', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ user_input: message }),
+            });
+
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+
+            const data = await response.json();
+            addMessage('IAmHere Project', data.response, data.mood);
+        } catch (error) {
+            console.error('Error:', error);
+            addMessage('IAmHere Project', 'Xin lỗi, đã xảy ra lỗi khi xử lý yêu cầu của bạn.');
+        }
+    });
+
+    function addMessage(sender, message, mood = null) {
+        const messageElement = document.createElement('div');
+        messageElement.className = `mb-2 p-2 rounded-lg background_color_chat ${sender === 'Bạn' ? 'bg-blue-100 text-right' : 'bg-gray-100' }`;
+        messageElement.innerHTML = `<strong>${sender}:</strong> ${message}`;
+        
+        chatContainer.appendChild(messageElement);
+        chatContainer.scrollTop = chatContainer.scrollHeight;  // Tự động cuộn xuống
+    }
+
+    // Thực hiện thay đổi màu dựa trên dữ liệu màu từ backend
+    document.addEventListener('DOMContentLoaded', function() {
+        const messages = document.querySelectorAll('.message-bg');
+        messages.forEach(message => {
+            const color = message.dataset.color_code;
+            if (color) {
+                message.style.backgroundColor = color;
+                console.log('Áp dụng màu:', color);
+            } else {
+                console.log('Không tìm thấy màu:', message.textContent);
+            }
+        });
+    });
+</script>
+</body>
+</html>
+
+

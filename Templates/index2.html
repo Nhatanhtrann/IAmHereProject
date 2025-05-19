@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Hỗ Trợ Trầm Cảm</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="static/js/script.js"></script>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Chatbot Hỗ Trợ Tinh Thần</h2>
+            <p>Luôn nhớ: Tôi không phải chuyên gia y tế. Hãy tìm sự giúp đỡ chuyên nghiệp nếu cần.</p>
+        </div>
+        <div class="disclaimer">
+            <strong>Tuyên bố Miễn trừ Trách nhiệm:</strong> Chatbot này cung cấp thông tin và hỗ trợ tinh thần, không thay thế chẩn đoán hay điều trị y tế chuyên nghiệp. Nếu bạn có lo ngại về sức khỏe tâm thần, vui lòng tham khảo ý kiến bác sĩ hoặc chuyên gia.
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <!-- Tin nhắn bot chào mừng ban đầu -->
+            <div class="message bot">
+                <div class="text">Chào bạn, tôi là trợ lý AI sẵn sàng lắng nghe và hỗ trợ bạn. Bạn có thể chia sẻ bất cứ điều gì bạn đang cảm thấy hoặc suy nghĩ không?</div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Nhập tin nhắn của bạn...">
+            <button id="sendMessage">Gửi</button>
+            <button id="resetChat" class="reset-button">Reset</button>
+        </div>
+    </div>
+</body>
+</html>

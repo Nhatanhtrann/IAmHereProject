@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: aichatbot
+    env: python
+    region: singapore
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn ai_service:app"
+    envVars:
+      - key: PORT
+        value: 10000

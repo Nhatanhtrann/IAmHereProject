@@ -1,0 +1,4 @@
+Flask==3.0.0
+flask-cors==4.0.0
+sqlite3  # built-in, không cần cài nếu dùng Python chuẩn
+gunicorn==21.2.0  # Cần thiết cho Render deployment

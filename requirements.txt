@@ -1,26 +1,20 @@
 # Core dependencies
-flask==2.3.3
-flask-cors==4.0.0
-python-dotenv==1.0.0
+flask>=2.0.0
+flask-cors>=4.0.0
+python-dotenv>=1.0.0
 
 # Google AI dependencies
-google-generativeai==0.3.2
+google-generativeai>=0.3.0
 
 # Machine Learning and NLP
-transformers==4.35.2
-torch==2.1.1
-scikit-learn==1.3.2
-pandas==2.1.3
-numpy==1.24.4
+transformers>=4.30.0
+torch>=2.0.0
+scikit-learn>=1.3.0
+pandas>=2.0.0
+numpy>=1.24.0
 
-# Database
-sqlite3  # Built-in module, no version needed
-
-# Logging (built-in module)
-# logging  # Built-in module
-
-# Other built-in modules used:
-# os, json, time, traceback, datetime, re, pickle
+# Built-in modules (không cần cài đặt):
+# sqlite3, os, json, time, traceback, datetime, re, pickle, logging
 
 # Optional: For better performance
-# accelerate==0.24.1  # For faster transformers inference
+# accelerate>=0.20.0  # For faster transformers inference
